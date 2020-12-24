@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/tt.jpg);
+	background-image: url('hero-bg.jpg');
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -288,6 +288,7 @@ p {
 	margin-top: 50px;
 }
 #services .service-item {
+	background-image: url('tt.jpg');
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -295,7 +296,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
+
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
