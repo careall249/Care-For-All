@@ -1,23 +1,25 @@
-/*eslint-env es6*/
-const navSlide = () => {
-     const linebar = document.querySelector('.linebar');
-     const nav = document.querySelector('.rightmenu');
-     const navLinks = document.querySelectorAll('.rightmenu li');
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
 
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
 
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = '#29323c';
+	} else {
+		header.style.backgroundColor = 'transparent';
+	}
+});
 
-     linebar.addEventListener('click', () => {
-           nav.classList.toggle('nav-active');
-
-           navLinks.forEach((link, index) => {
-                 if(link.style.animation){
-                    link.style.animation = '';
-                 } else {
-                    link.style.animation = 'navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s';
-                 }
-           });
-           linebar.classList.toggle('toggle');
-    });
-}
-
- navSlide();
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
