@@ -73,13 +73,15 @@ p {
 	align-items: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-left: -20px;
+	margin-left: -25px;
+
 	justify-content:center;
 	height: 90px;
 }
+
 .brand h1 {
-	font-size: 3rem;
-	margin-top: 28px;
+	font-size: 2.5rem;
+	margin-top: 31px;
 	text-transform: uppercase;
 	color: white;
 	padding: 0 10px;
@@ -173,7 +175,7 @@ p {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(.8);
-	margin-right: 20px;
+	margin-right: 10px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -592,6 +594,8 @@ p {
 		font-size: 6rem;
 	}
 
+
+
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
@@ -714,6 +718,15 @@ p {
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
+	}
+}
+@media only screen and (max-width: 382px) {
+	.brand h1 {
+		margin-top: 38px;
+		font-size: 2.2rem;
+	}
+	#header .hamburger {
+		margin-right: -5px;
 	}
 }
 /* End  Media Query For Desktop */
