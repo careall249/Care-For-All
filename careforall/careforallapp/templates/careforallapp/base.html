@@ -37,9 +37,9 @@
     <div class="hero container">
       <div>
         <h1>Hello, <span></span></h1>
-        <h1>Merry <span></span></h1>
-        <h1>Christmas<span></span></h1>
-        <a href="#projects" type="button" class="cta">SEARCH</a>
+        <h1>Happy <span></span></h1>
+        <h1>New Year<span></span></h1>
+
       </div>
     </div>
   </section>
@@ -50,28 +50,28 @@
     <div class="services container">
       <div class="service-top">
         <h1 class="section-title">Serv<span>i</span>ces</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias voluptatum explicabo!</p>
+        <p>We don't want to push our ideas on to readers, we simply want to make what they want.</p>
       </div>
       <div class="service-bottom">
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+          <h2>Trusted Knowledge</h2>
+          <p>We provide you the valid and trusted data. We dont provide fake datas</p>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+          <h2>Safe Website</h2>
+          <p>You are in safe environment, we use all type of hashing and layers to protect our websites.</p>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+          <h2>5 Best Topics</h2>
+          <p>We give you the 5 best topics. You can visit anyone of them. They are all hot topics.</p>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed architecto placeat beatae tenetur officia quod</p>
+          <h2>Contact Us Anytime</h2>
+          <p>Contact us for any queries related to these topic. We are excited to solve your queries.  </p>
         </div>
       </div>
     </div>
@@ -87,7 +87,37 @@
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
-            <h1>Topic 1</h1>
+            <a href="{% url 'datasecurity' %}" style="color: #8ebf42"><h1>Data Security</h1></a>
+            <h2>Data Is The Modern Fuel</h2>
+            <p>Digital technology is changing the way in which society is operating and the ways we live our lives. Every day, there is new ways to work and to play, new methods of interacting with one another. As our digital footprint grows exponentially, we are forming our own online identities.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'css/ds.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="{% url 'fitness' %}" style="color: #8ebf42"><h1>Health and Fitness</h1></a>
+            <h2>The Science Behind A Good Workout</h2>
+            <p>We’ve all been there before: a tough day at work or in school. We’re exhausted, both mentally and physically, but we still manage to push ourselves and get to the gym. Why do we do it? Because we know how much better we’ll feel after an evening indoor cycling class, an hour of football or a challenging weight workout. We leave feeling refreshed, rejuvenated and invigorated—truly transformed. Clearly, there’s a relationship between exercise and the brain, but what is it?</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'css/fit-3.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="{% url 'personality' %}" style="color: #8ebf42"><h1>Personality Development</h1></a>
+            <h2>THE IMPORTANCE OF GOAL SETTING </h2>
+            <p>We know the importance of goal setting, but most times our goals are not measurable and clearly defined. You hear people say things like “I want to lose weight”, though losing weight is a goal it can be clearly defined if you add things like: “I want to lose weight, by eating healthy and exercising. When you compare both statements, the first one only states what you intend to do, the second one states what you intend to do and how you intend to do it. </p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'css/tt.jpg' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Coming Soon!!!!!</h1>
             <h2>Coding is Love</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
           </div>
@@ -97,37 +127,7 @@
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Topic 2</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="{% static 'css/img-1.png' %}" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Topic 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="{% static 'css/img-1.png' %}" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Topic 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="{% static 'css/img-1.png' %}" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Topic 5</h1>
+            <h1>Coming Soon!!!</h1>
             <h2>Coding is Love</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
           </div>
@@ -145,16 +145,70 @@
     <div class="about container">
       <div class="col-left">
         <div class="about-img">
-          <img src="{% static 'css/tt.jpg' %}" alt="img">
+          <img src="{% static 'css/hit.jpeg' %}" alt="img">
         </div>
       </div>
       <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni! Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
+        <h1 class="section-title">Mr.<span>Hitesh Kumar</span></h1>
+        <h2>Content Writer</h2>
+        <p>Qualification: _</p>
       </div>
     </div>
+  </section>
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'css/ash.jpeg' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Mr.<span>Ashwini Kumar</span></h1>
+        <h2>Content Writer</h2>
+        <p>Qualification: _</p>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'css/asu.jpeg' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Mr.<span>Asutosh</span></h1>
+        <h2>Content Writer</h2>
+        <p>Qualification: _</p>
+      </div>
+    </div>
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="{% static 'css/hri.jpeg' %}" alt="img">
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">Mr.<span>Hrithik Singh</span></h1>
+          <h2>Web Developer</h2>
+          <p>Qualification: _</p>
+        </div>
+      </div>
+      <section id="about">
+        <div class="about container">
+          <div class="col-left">
+            <div class="about-img">
+              <img src="{% static 'css/nam.jpg' %}" alt="img">
+            </div>
+          </div>
+          <div class="col-right">
+            <h1 class="section-title">Mr.<span>Naman Rohilla</span></h1>
+            <h2>Web Developer</h2>
+            <p>Qualification: _</p>
+          </div>
+        </div>
+
   </section>
   <!-- End About Section -->
 
@@ -167,23 +221,22 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
           <div class="contact-info">
             <h1>Phone</h1>
-            <h2>+1 234 123 1234</h2>
-            <h2>+1 234 123 1234</h2>
+            <h2>Comming Soon!!!</h2>
+
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>info@gmail.com</h2>
-            <h2>abcd@gmail.com</h2>
+            <h2>careall249@gmail.com</h2>
           </div>
         </div>
         <div class="contact-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
           <div class="contact-info">
             <h1>Address</h1>
-            <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+            <h2>MNIT, Banglore</h2>
           </div>
         </div>
       </div>
@@ -197,18 +250,14 @@
       <div class="brand"><h1><span>C</span>are For <span>A</span>ll</h1></div>
       <h2>Your Complete Web Solution</h2>
       <div class="social-icon">
+
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+          <a href="https://www.instagram.com/_care4all_/?igshid=r0bnwlhb8cbm"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+          <a href="https://twitter.com/CareForAll249?s=08"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
         </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png"/></a>
-        </div>
+
       </div>
       <p>Copyright © 2020 Arfan. All rights reserved</p>
     </div>

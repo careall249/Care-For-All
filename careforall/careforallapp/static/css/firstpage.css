@@ -352,7 +352,9 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
+
 }
+
 #projects .projects-header h1 {
 	margin-bottom: 50px;
 }
@@ -386,6 +388,7 @@ p {
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
+  color: yellow;
 }
 #projects .project-info h2 {
 	font-size: 1.8rem;
