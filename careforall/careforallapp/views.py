@@ -20,3 +20,7 @@ def personality(request):
     ppost=Post2.objects.all()
     context={"ppost":ppost}
     return render(request, "careforallapp/personality.html", context)
+def blogHome(request, slug):
+    post=Post.objects.filter(slug=slug).first()
+    context={"post":post}
+    return render(request, "careforallapp/blogHome.html", context)
