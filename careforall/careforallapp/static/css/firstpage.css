@@ -226,6 +226,11 @@ p {
 	position: relative;
 	z-index: 1;
 }
+#hero p {
+	color: white;
+	margin-top: 5px;
+	font-size: 2rem;
+}
 #hero::after {
 	content: '';
 	position: absolute;
@@ -438,13 +443,15 @@ p {
 	width: 100%;
 }
 #about .col-right h2 {
-	font-size: 1.8rem;
+	font-size: 3rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
 	margin-bottom: 10px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	font-size: 2rem;
+
 }
 #about .col-right .cta {
 	color: black;

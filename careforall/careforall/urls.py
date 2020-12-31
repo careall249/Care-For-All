@@ -27,5 +27,5 @@ urlpatterns = [
     url(r'^fitness/', views.fitness, name='fitness'),
     url(r'^personality/', views.personality, name='personality'),
     url(r'^(?P<slug>[^/]+)$', views.blogHome, name='blogHome'),
-
+    
 ]
