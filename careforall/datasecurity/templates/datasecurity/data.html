@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/datasecurity.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="noEcH88O"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+
+  </head>
+  <body>
+
+   <section id = 'main'>
+    <div class="jumbotron">
+    <div class="container my-3">
+    <h2>Data Security</h2>
+    {% for post in allPosts  %}
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+        <div class="card-body">
+            <strong class="d-inline-block mb-2 text-primary">Article  by {{post.author}}</strong>
+            <h4 class="mb-0">{{post.title}}</h3>
+
+            <h3 class="card-text">{{post.content|safe | truncatechars:300}}</h3>
+            <h2 class="mb-0">{{post.datetime}}</h4>
+            <div class="my-2">
+                <a href="{% url 'datasecurity:blogHome' slug=post.slug %}" role="button" class="btn btn-primary">Continue reading</a>
+            </div>
+            
+        </div>
+
+        </div>
+
+        {% endfor %}
+    </div>
+    <div>
+    </section>
+  </div>
+  </body>
+</html>

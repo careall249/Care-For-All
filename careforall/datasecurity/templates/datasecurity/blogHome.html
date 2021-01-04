@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/datasecurity.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="noEcH88O"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2"></script>
+  </head>
+  <body>
+
+  <div class="jumbotron">
+    <div class="container my-3">
+     <div class="blog-post">
+        <h2 class="blog-post-title">{{post.title}}</h2>
+        <p class="blog-post-meta">{{post.timeStamp}} by <a href="#">{{post.author}}</a></p>
+
+        <p>{{post.content|safe}}</p>
+        <div class="fb-like" data-href="http://127.0.0.1:8000/datasecurity/datasecurity/{{post.post_id}}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div><br>
+        <div class="fb-comments" data-href="http://127.0.0.1:8000/datasecurity/datasecurity/{{post.post_id}}" data-width="" data-numposts="5"></div>
+        <hr>
+      </div>
+      </div>
+   </div>
+  </body>
+</html>
