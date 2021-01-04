@@ -23,9 +23,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^$', views.base, name='base'),
-    url(r'^datasecurity/', views.datasecurity, name='datasecurity'),
-    url(r'^fitness/', views.fitness, name='fitness'),
-    url(r'^personality/', views.personality, name='personality'),
-    url(r'^(?P<slug>[^/]+)$', views.blogHome, name='blogHome'),
+    url(r'^datasecurity/',  include("datasecurity.urls", namespace="datasecurity")),
+    url(r'^fitness/',  include("fitness.urls", namespace="fitness")),
+    url(r'^personality/',  include("personality.urls", namespace="personality")),
     
+
+
 ]
