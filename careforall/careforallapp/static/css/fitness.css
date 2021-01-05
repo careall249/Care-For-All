@@ -1,0 +1,14 @@
+.jumbotron {
+  background-image: url('fit-1.jpg');
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: -5px;
+  background-size: cover;
+
+
+}
+.my-3 {
+  background-color: #ffffe6;
+  opacity: 90%;
+}
